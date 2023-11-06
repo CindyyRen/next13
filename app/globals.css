@@ -22,7 +22,7 @@ body {
   }
 
   .card-wrapper {
-    @apply bg-light-900 dark:dark-gradient shadow-light-100 dark:shadow-dark-100;
+    @apply bg-light-900 dark:dark-gradient  dark:shadow-dark-100;
   }
 
   .btn {
@@ -163,3 +163,4 @@ code {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+/* shadow-light-100 */
