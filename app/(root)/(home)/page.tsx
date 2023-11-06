@@ -1,8 +1,8 @@
 // import { UserButton } from '@clerk/nextjs';
 
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import LocalSearchBar from "../../../components/shared/search/LocalSearchBar";
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import LocalSearchBar from '../../../components/shared/search/LocalSearchBar';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <div className="mt-11 flex justify-between gap-5 max-sm:flex-col sm:items-center">
         <LocalSearchBar
           route="/"
-          iconPosition="left"
+          iconPosition="right"
           imgSrc="/assets/icons/search.svg"
           placeholder="Search for questions"
           otherClasses="flex-1"
