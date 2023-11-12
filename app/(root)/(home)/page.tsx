@@ -1,5 +1,3 @@
-// import { UserButton } from '@clerk/nextjs';
-
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import LocalSearchBar from '../../../components/shared/search/LocalSearchBar';
@@ -60,7 +58,7 @@ export default function Home() {
       <div className="mt-11 flex justify-between gap-5 max-sm:flex-col sm:items-center">
         <LocalSearchBar
           route="/"
-          iconPosition="right"
+          iconPosition="left"
           imgSrc="/assets/icons/search.svg"
           placeholder="Search for questions"
           otherClasses="flex-1"
@@ -71,7 +69,9 @@ export default function Home() {
           containerClasses="hidden max-md:flex"
         />
       </div>
+
       <HomeFilters />
+
       <div className="mt-10 flex w-full flex-col gap-6">
         {questions.length > 0 ? (
           questions.map((question) => (
